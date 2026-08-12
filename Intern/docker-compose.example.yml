@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  demurrage-calculator:
+    image: janthalgahawaththa/demurrage-calculation:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: demurrage_calculator_app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # Persists the SQLite database on your host filesystem
+      - ./demurrage.db:/app/demurrage.db
+    restart: unless-stopped

@@ -5,8 +5,9 @@ WORKDIR /app
 # Copy requirements file first for caching
 COPY requirements.txt .
 
-# Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Install dependencies with build cache mount
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install -r requirements.txt
 
 # Copy Intern files into container
 COPY . .
