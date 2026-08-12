@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vessel Laycan & Demurrage Calculator</title>
   <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
 
   <!-- Login Screen Overlay -->
@@ -38,8 +40,10 @@
   <header>
     <h1>Vessel Laycan & Demurrage <strong>Calculator</strong></h1>
     <div class="user-control-bar" id="user-control-bar" style="display: none;">
-      <span class="user-badge">User: <span id="current-user-name">Username</span> (<span id="current-user-role">Role</span>)</span>
-      <button class="btn btn-secondary" onclick="handleLogout()" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Logout</button>
+      <span class="user-badge">User: <span id="current-user-name">Username</span> (<span
+          id="current-user-role">Role</span>)</span>
+      <button class="btn btn-secondary" onclick="handleLogout()"
+        style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Logout</button>
     </div>
   </header>
 
@@ -52,9 +56,9 @@
         <button class="tab-btn" onclick="switchInputTab('tab-times')">2. Timestamps</button>
         <button class="tab-btn" onclick="switchInputTab('tab-delays')">3. Delays</button>
       </div>
-      
+
       <form id="calculator-form" onsubmit="event.preventDefault(); submitCalculation();">
-        
+
         <!-- Tab 1: Vessel & Laycan Info -->
         <div id="tab-vessel" class="tab-content active">
           <div class="form-row">
@@ -97,7 +101,8 @@
             </div>
           </div>
           <div style="margin-top: 1rem; text-align: right;">
-            <button type="button" class="btn btn-secondary" onclick="switchInputTab('tab-times')">Next: Timestamps →</button>
+            <button type="button" class="btn btn-secondary" onclick="switchInputTab('tab-times')">Next: Timestamps
+              →</button>
           </div>
         </div>
 
@@ -150,7 +155,8 @@
           </div>
           <div style="margin-top: 1rem; display: flex; justify-content: space-between;">
             <button type="button" class="btn btn-secondary" onclick="switchInputTab('tab-vessel')">← Back</button>
-            <button type="button" class="btn btn-secondary" onclick="switchInputTab('tab-delays')">Next: Delays →</button>
+            <button type="button" class="btn btn-secondary" onclick="switchInputTab('tab-delays')">Next: Delays
+              →</button>
           </div>
         </div>
 
@@ -174,7 +180,8 @@
                   <option value="terminal">Terminal</option>
                 </select>
               </div>
-              <button type="button" class="btn btn-secondary" onclick="addDelayRow()" style="padding: 0.65rem 1rem;">Add</button>
+              <button type="button" class="btn btn-secondary" onclick="addDelayRow()"
+                style="padding: 0.65rem 1rem;">Add</button>
             </div>
 
             <div class="delay-table-container">
@@ -207,9 +214,11 @@
     <!-- Right Panel: Results, History, Admin Panel -->
     <section class="card" id="display-panel">
       <div class="tab-header">
-        <button class="tab-btn active" id="btn-show-result" onclick="switchDisplayTab('tab-result')">Active Result</button>
+        <button class="tab-btn active" id="btn-show-result" onclick="switchDisplayTab('tab-result')">Active
+          Result</button>
         <button class="tab-btn" onclick="switchDisplayTab('tab-history')">History Log</button>
-        <button class="tab-btn" id="btn-admin-tab" onclick="switchDisplayTab('tab-admin')" style="display: none;">Admin Panel</button>
+        <button class="tab-btn" id="btn-admin-tab" onclick="switchDisplayTab('tab-admin')" style="display: none;">Admin
+          Panel</button>
       </div>
 
       <!-- Tab: Active Result -->
@@ -222,7 +231,7 @@
 
         <!-- Result values -->
         <div id="results-content" style="display: none; flex-direction: column; gap: 1.5rem;">
-          
+
           <div id="demurrage-badge" class="result-status">
             <span id="badge-title">NO DEMURRAGE</span>
             <span id="badge-subtitle" class="result-status-sub">Operations completed within allowed time.</span>
@@ -232,19 +241,22 @@
             <h4>Laytime Start Rule Applied</h4>
             <p id="rule-explanation" style="font-weight: 500; margin-top: 0.25rem;"></p>
             <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">
-              Calculated Start Time: <span id="calculated-start-time" style="color: var(--text-main); font-weight: 600;"></span>
+              Calculated Start Time: <span id="calculated-start-time"
+                style="color: var(--text-main); font-weight: 600;"></span>
             </div>
           </div>
 
           <div class="stats-grid">
             <div class="stat-card">
               <div class="stat-label">Actual Elapsed Time</div>
-              <div class="stat-value"><span id="elapsed-hours">0</span> <span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">hrs</span></div>
+              <div class="stat-value"><span id="elapsed-hours">0</span> <span
+                  style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">hrs</span></div>
             </div>
             <div class="stat-card">
               <div class="stat-label">Operational Time (Net)</div>
               <div class="stat-value" id="net-operational-wrapper" style="color: var(--primary);">
-                <span id="operational-hours">0</span> <span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">hrs</span>
+                <span id="operational-hours">0</span> <span
+                  style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">hrs</span>
               </div>
             </div>
           </div>
@@ -305,11 +317,15 @@
       <!-- Tab: Admin Panel -->
       <div id="tab-admin" class="display-tab-content">
         <div class="admin-sections" style="display: flex; flex-direction: column; gap: 1.5rem;">
-          
+
           <!-- Add User Form -->
-          <div class="admin-card" style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
-            <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Add New User</h3>
-            <form id="add-user-form" onsubmit="event.preventDefault(); handleAddUser();" style="display: flex; flex-direction: column; gap: 0.8rem;">
+          <div class="admin-card"
+            style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+            <h3
+              style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+              Add New User</h3>
+            <form id="add-user-form" onsubmit="event.preventDefault(); handleAddUser();"
+              style="display: flex; flex-direction: column; gap: 0.8rem;">
               <div class="form-row">
                 <div class="form-group">
                   <label for="new_username">Username</label>
@@ -334,8 +350,11 @@
           </div>
 
           <!-- Users List -->
-          <div class="admin-card" style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
-            <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Active Accounts</h3>
+          <div class="admin-card"
+            style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+            <h3
+              style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+              Active Accounts</h3>
             <div class="delay-table-container">
               <table>
                 <thead>
@@ -359,4 +378,5 @@
 
   <script src="/static/app.js"></script>
 </body>
+
 </html>

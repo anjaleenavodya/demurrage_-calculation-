@@ -98,7 +98,7 @@ function switchInputTab(tabId) {
 
   // Show active tab
   document.getElementById(tabId).classList.add('active');
-  
+
   // Update header buttons state
   const btnIdx = { 'tab-vessel': 0, 'tab-times': 1, 'tab-delays': 2 }[tabId];
   document.querySelectorAll('#inputs-panel .tab-btn')[btnIdx].classList.add('active');
@@ -123,20 +123,20 @@ function switchDisplayTab(tabId) {
 function initDefaultDates() {
   const today = new Date();
   const formatLocalDate = (date) => date.toISOString().split('T')[0];
-  
+
   const start = new Date(today);
   const end = new Date(today);
   end.setDate(end.getDate() + 2);
-  
+
   document.getElementById('laycan_start').value = formatLocalDate(start);
   document.getElementById('laycan_end').value = formatLocalDate(end);
 
   const arrival = new Date(start);
   arrival.setHours(10, 0, 0, 0);
-  
+
   const norTendered = new Date(arrival);
   norTendered.setMinutes(15);
-  
+
   const norAccepted = new Date(arrival);
   norAccepted.setHours(11, 0, 0, 0);
 
@@ -184,7 +184,7 @@ function addDelayRow() {
   }
 
   delayRecords.push({ reason, duration, party });
-  
+
   reasonInput.value = '';
   durationInput.value = '';
   renderDelays();
@@ -243,11 +243,11 @@ async function submitCalculation() {
     }
 
     const data = await response.json();
-    
+
     // Switch to results tab & render it
     switchDisplayTab('tab-result');
     renderResults(data);
-    
+
     // Reload history log to show the saved record
     loadHistory();
   } catch (error) {
@@ -263,7 +263,7 @@ function renderResults(res) {
   const badge = document.getElementById('demurrage-badge');
   const title = document.getElementById('badge-title');
   const subtitle = document.getElementById('badge-subtitle');
-  
+
   if (res.demurrage_payable) {
     badge.className = 'result-status demurrage-due';
     title.textContent = `DEMURRAGE PAYABLE: ${res.demurrage_hours.toFixed(2)} HOURS`;
@@ -279,7 +279,7 @@ function renderResults(res) {
 
   document.getElementById('elapsed-hours').textContent = res.actual_elapsed_hours.toFixed(2);
   document.getElementById('operational-hours').textContent = res.operational_time_hours.toFixed(2);
-  
+
   const netOpWrapper = document.getElementById('net-operational-wrapper');
   if (res.operational_time_hours > res.allowed_laytime_hours) {
     netOpWrapper.style.color = 'var(--danger)';
@@ -370,7 +370,7 @@ function loadCalculationIntoForm(item) {
   document.getElementById('berths_count').value = item.berths_count;
   document.getElementById('laycan_start').value = item.laycan_start;
   document.getElementById('laycan_end').value = item.laycan_end;
-  
+
   // Format datetime strings to fit browser datetime-local format
   document.getElementById('arrival_time').value = item.arrival_time.slice(0, 16);
   document.getElementById('nor_tendered').value = item.nor_tendered.slice(0, 16);
@@ -394,7 +394,7 @@ function loadCalculationIntoForm(item) {
   // Render the pre-calculated outputs
   switchDisplayTab('tab-result');
   renderResults(item.result);
-  
+
   // Switch input tab to Vessel Info to review parameters
   switchInputTab('tab-vessel');
 }
@@ -405,7 +405,7 @@ async function handleDeleteHistory(calcId) {
     const res = await fetch(`/api/calculations/${calcId}`, { method: 'DELETE' });
     if (!res.ok) throw new Error("Could not delete item");
     loadHistory();
-    
+
     // If the active result was the one deleted, clear it
     document.getElementById('results-empty').style.display = 'flex';
     document.getElementById('results-content').style.display = 'none';
