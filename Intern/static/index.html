@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vessel Laycan & Demurrage Calculator</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Login Screen Overlay -->
+  <div id="login-overlay" class="login-overlay">
+    <div class="login-card">
+      <h2>Vessel Calculator <strong>Login</strong></h2>
+      <p style="color: var(--text-muted); font-size: 0.85rem; text-align: center; margin-bottom: 1rem;">
+        Log in to perform and save calculations.
+      </p>
+      <form id="login-form" onsubmit="event.preventDefault(); handleLogin();">
+        <div class="form-group">
+          <label for="login_username">Username</label>
+          <input type="text" id="login_username" required placeholder="e.g. admin">
+        </div>
+        <div class="form-group">
+          <label for="login_password">Password</label>
+          <input type="password" id="login_password" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 0.8rem;">
+          Log In
+        </button>
+      </form>
+      <p style="color: var(--text-helper); font-size: 0.75rem; text-align: center; margin-top: 1.5rem;">
+        Log in with the credentials defined in your <strong>.env</strong> configuration.
+      </p>
+    </div>
+  </div>
+
+  <!-- App Header -->
+  <header>
+    <h1>Vessel Laycan & Demurrage <strong>Calculator</strong></h1>
+    <div class="user-control-bar" id="user-control-bar" style="display: none;">
+      <span class="user-badge">User: <span id="current-user-name">Username</span> (<span id="current-user-role">Role</span>)</span>
+      <button class="btn btn-secondary" onclick="handleLogout()" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Logout</button>
+    </div>
+  </header>
+
+  <!-- App Body -->
+  <main id="app-main" style="display: none;">
+    <!-- Left Panel: Inputs (Tabbed) -->
+    <section class="card" id="inputs-panel">
+      <div class="tab-header">
+        <button class="tab-btn active" onclick="switchInputTab('tab-vessel')">1. Vessel & Laycan</button>
+        <button class="tab-btn" onclick="switchInputTab('tab-times')">2. Timestamps</button>
+        <button class="tab-btn" onclick="switchInputTab('tab-delays')">3. Delays</button>
+      </div>
+      
+      <form id="calculator-form" onsubmit="event.preventDefault(); submitCalculation();">
+        
+        <!-- Tab 1: Vessel & Laycan Info -->
+        <div id="tab-vessel" class="tab-content active">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vessel_name">Vessel Name</label>
+              <input type="text" id="vessel_name" value="MT Serendib" required>
+            </div>
+            <div class="form-group">
+              <label for="cargo_type">Cargo Type (Allowed Laytime)</label>
+              <select id="cargo_type" required>
+                <option value="finished_product">Finished Product (96h - Petrol, Diesel, JetA1)</option>
+                <option value="crude">Crude Vessel (72h)</option>
+                <option value="fuel_oil">Fuel Oil (120h)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="berth_type">Berth Type</label>
+              <select id="berth_type" required>
+                <option value="DTB">Dolphin Tanker Berth (DTB - Inside Harbor)</option>
+                <option value="SPBM">Single Point Buoy Mooring (SPBM - Outside Harbor)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="berths_count">Berthing Count (Shifting)</label>
+              <input type="number" id="berths_count" min="1" value="1" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="laycan_start">Laycan Start Date</label>
+              <input type="date" id="laycan_start" required>
+            </div>
+            <div class="form-group">
+              <label for="laycan_end">Laycan End Date</label>
+              <input type="date" id="laycan_end" required>
+            </div>
+          </div>
+          <div style="margin-top: 1rem; text-align: right;">
+            <button type="button" class="btn btn-secondary" onclick="switchInputTab('tab-times')">Next: Timestamps →</button>
+          </div>
+        </div>
+
+        <!-- Tab 2: Timestamps -->
+        <div id="tab-times" class="tab-content">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="arrival_time">Vessel Arrived (E.O.S.P)</label>
+              <input type="datetime-local" id="arrival_time" required>
+            </div>
+            <div class="form-group">
+              <label for="nor_tendered">NOR Tendered Time</label>
+              <input type="datetime-local" id="nor_tendered" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nor_accepted">NOR Accepted Time</label>
+              <input type="datetime-local" id="nor_accepted" required>
+            </div>
+            <div class="form-group">
+              <label for="loading_arm_disconnected">Loading Arm Disconnected</label>
+              <input type="datetime-local" id="loading_arm_disconnected" required>
+            </div>
+          </div>
+
+          <div class="toggle-group">
+            <label class="toggle-item">
+              <div class="toggle-label-desc">
+                <span>Terminal requested early start</span>
+                <span>Count laytime since NOR Accepted if vessel arrives early</span>
+              </div>
+              <div class="switch">
+                <input type="checkbox" id="terminal_requested_early">
+                <span class="slider"></span>
+              </div>
+            </label>
+
+            <label class="toggle-item">
+              <div class="toggle-label-desc">
+                <span>Terminal granted late berth permission</span>
+                <span>Count since NOR accepted despite arriving after cut-off hours</span>
+              </div>
+              <div class="switch">
+                <input type="checkbox" id="terminal_granted_permission_late">
+                <span class="slider"></span>
+              </div>
+            </label>
+          </div>
+          <div style="margin-top: 1rem; display: flex; justify-content: space-between;">
+            <button type="button" class="btn btn-secondary" onclick="switchInputTab('tab-vessel')">← Back</button>
+            <button type="button" class="btn btn-secondary" onclick="switchInputTab('tab-delays')">Next: Delays →</button>
+          </div>
+        </div>
+
+        <!-- Tab 3: Delays & Actions -->
+        <div id="tab-delays" class="tab-content">
+          <div class="form-group">
+            <label style="font-weight: 600; color: var(--text-main);">Add Delay Event</label>
+            <div class="form-row" style="grid-template-columns: 2fr 1fr 1fr auto; align-items: end; gap: 0.5rem;">
+              <div class="form-group">
+                <label for="delay_reason" style="font-size: 0.75rem;">Reason</label>
+                <input type="text" id="delay_reason" placeholder="Slow pumping, weather...">
+              </div>
+              <div class="form-group">
+                <label for="delay_duration" style="font-size: 0.75rem;">Hours</label>
+                <input type="number" id="delay_duration" step="0.1" min="0" placeholder="Hrs">
+              </div>
+              <div class="form-group">
+                <label for="delay_party" style="font-size: 0.75rem;">Party</label>
+                <select id="delay_party">
+                  <option value="vessel">Vessel</option>
+                  <option value="terminal">Terminal</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-secondary" onclick="addDelayRow()" style="padding: 0.65rem 1rem;">Add</button>
+            </div>
+
+            <div class="delay-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Reason</th>
+                    <th>Party</th>
+                    <th>Duration</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="delay-table-body">
+                  <!-- Dynamic delay rows -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; gap: 1rem;">
+            <button type="button" class="btn btn-secondary" onclick="switchInputTab('tab-times')">← Back</button>
+            <button type="submit" class="btn btn-primary" style="flex: 1; padding: 0.75rem;">
+              Calculate & Save Result
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- Right Panel: Results, History, Admin Panel -->
+    <section class="card" id="display-panel">
+      <div class="tab-header">
+        <button class="tab-btn active" id="btn-show-result" onclick="switchDisplayTab('tab-result')">Active Result</button>
+        <button class="tab-btn" onclick="switchDisplayTab('tab-history')">History Log</button>
+        <button class="tab-btn" id="btn-admin-tab" onclick="switchDisplayTab('tab-admin')" style="display: none;">Admin Panel</button>
+      </div>
+
+      <!-- Tab: Active Result -->
+      <div id="tab-result" class="display-tab-content active">
+        <!-- Welcome state -->
+        <div id="results-empty" class="welcome-msg">
+          <h3>Ready to Calculate</h3>
+          <p>Please enter your parameters in the tabs on the left, then click "Calculate & Save Result".</p>
+        </div>
+
+        <!-- Result values -->
+        <div id="results-content" style="display: none; flex-direction: column; gap: 1.5rem;">
+          
+          <div id="demurrage-badge" class="result-status">
+            <span id="badge-title">NO DEMURRAGE</span>
+            <span id="badge-subtitle" class="result-status-sub">Operations completed within allowed time.</span>
+          </div>
+
+          <div class="rule-explanation-box">
+            <h4>Laytime Start Rule Applied</h4>
+            <p id="rule-explanation" style="font-weight: 500; margin-top: 0.25rem;"></p>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">
+              Calculated Start Time: <span id="calculated-start-time" style="color: var(--text-main); font-weight: 600;"></span>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-label">Actual Elapsed Time</div>
+              <div class="stat-value"><span id="elapsed-hours">0</span> <span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">hrs</span></div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Operational Time (Net)</div>
+              <div class="stat-value" id="net-operational-wrapper" style="color: var(--primary);">
+                <span id="operational-hours">0</span> <span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">hrs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="netting-viz">
+            <div class="bar-labels">
+              <span>Vessel Delays: <strong id="vessel-delay-sum" style="color: var(--accent);">0h</strong></span>
+              <span>Terminal Delays: <strong id="terminal-delay-sum" style="color: var(--primary);">0h</strong></span>
+            </div>
+            <div class="bar-track">
+              <div id="vessel-bar-fill" class="bar-fill-vessel" style="width: 0%"></div>
+              <div id="terminal-bar-fill" class="bar-fill-terminal" style="width: 0%"></div>
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center;" id="netting-explanation">
+              Delays offset. Net vessel delay: <strong>0h</strong>
+            </div>
+          </div>
+
+          <div class="detail-list">
+            <div class="detail-row">
+              <span>Actual Elapsed Time</span>
+              <span id="val-elapsed">0.00 hrs</span>
+            </div>
+            <div class="detail-row">
+              <span>Allowed Laytime (Cargo default)</span>
+              <span id="val-allowed">0.00 hrs</span>
+            </div>
+            <div class="detail-row">
+              <span>Shifting Deduction (Multiple berths)</span>
+              <span id="val-shifting" style="color: var(--success);">-0.00 hrs</span>
+            </div>
+            <div class="detail-row">
+              <span>Net Vessel Delays (Deducted)</span>
+              <span id="val-net-vessel-delay" style="color: var(--success);">-0.00 hrs</span>
+            </div>
+            <div class="detail-row" style="border-top: 1.5px solid var(--border-color); padding-top: 0.75rem;">
+              <span>Final Net Operational Time</span>
+              <span id="val-operational" style="font-weight: 700;">0.00 hrs</span>
+            </div>
+            <div class="detail-row">
+              <span>Demurrage Hours</span>
+              <span id="val-demurrage" style="font-weight: 700;">0.00 hrs</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tab: History Log -->
+      <div id="tab-history" class="display-tab-content">
+        <div class="history-list-container">
+          <ul class="history-list" id="history-list-body">
+            <!-- Dynamic calculation items loaded here -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tab: Admin Panel -->
+      <div id="tab-admin" class="display-tab-content">
+        <div class="admin-sections" style="display: flex; flex-direction: column; gap: 1.5rem;">
+          
+          <!-- Add User Form -->
+          <div class="admin-card" style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+            <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Add New User</h3>
+            <form id="add-user-form" onsubmit="event.preventDefault(); handleAddUser();" style="display: flex; flex-direction: column; gap: 0.8rem;">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="new_username">Username</label>
+                  <input type="text" id="new_username" required placeholder="e.g. jason">
+                </div>
+                <div class="form-group">
+                  <label for="new_password">Password</label>
+                  <input type="password" id="new_password" required placeholder="••••••••">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="new_role">User Role</label>
+                <select id="new_role" required>
+                  <option value="user">User (Calculate & View History)</option>
+                  <option value="admin">Admin (All rights + Manage Users)</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary" style="padding: 0.6rem; font-size: 0.9rem;">
+                Create Account
+              </button>
+            </form>
+          </div>
+
+          <!-- Users List -->
+          <div class="admin-card" style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+            <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Active Accounts</h3>
+            <div class="delay-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th style="width: 50px;"></th>
+                  </tr>
+                </thead>
+                <tbody id="user-table-body">
+                  <!-- Users loaded dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

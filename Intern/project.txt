@@ -1,0 +1,70 @@
+The software should be:
+
+• Date time calculation
+• Need the difference between laycan start from and lording arm disconnected time shold be there.
+• In that program there should be a place to put the time manually.
+• On the side there should a place to calculate the operational time (Need the conditions).
+• if there are demurrage display the demurrage time
+• Add a columns to put reasons for delays both vessel and terminal
+• If it is a vessel side delay it can reduce from the operational time (example: if the vessel laycan for the sake of 96h-120h gone. We can put 20h for vessel side.
+Summarize:
+
+There should be a program ,when we enter the time show ,operational time, what are the demurrage, vessel delayas, terminal delays separately. Should reduce vessel delays from the terminal delays and reduce terminal delays form the vessel delays. At the end show do we need to pay demurrage or not.
+
+Conditions:
+
+1) if the vessel arrive before laycan
+
+i. Depend on the terminal request laycan should start as NOR accepted.
+(NOR-notice of readiness -when the vessel arrive they say they can discharge, that time )
+
+ 
+
+ 
+
+ii. DTB(in the Harber)-before arrive the vessel, on their request, NOR accepted, the laycan start to count -1300h afternoon
+SPBM(out side of the Harber)-from 1200h afternoon to first day of the delivery laycan.
+
+2) if first day of the laycan
+
+i. DTB-if the vessel arrive after 1700h evening terminal can give not the permission to birth the vessel. if it is. their laycan calculate not at the vessel arrival day but the day after that.at 1300h afternoon.
+ii. SPBM-if the vessel arrive after 1500h evening the laycan start to count the day after 1200h afternoon.
+    But those are change if the vessel come first day of the laycan and if terminal accepted the     NOR, the time start to count that NOR accepted time.
+
+3) second day of the laycan
+
+This is just like the first day of the laycan. If they are miss the time laycan count since next day. But if they are birth it calculate from the NOR accepted time.
+
+4) After the delivery laycan
+
+For any reason whatsoever no need to birth. when ever terminal accept the NOR since at that day count the laycan.
+
+ 
+
+Start Time:
+
+Laycan-
+
+Finish product vessel -96h
+
+• Petrol
+• Deisel
+• JetA1
+Crude vessel-72h
+
+Fuel oil-120h
+
+❖ Cheak those conditions and after if finish product vessel take time over 96h?, if crude vessel take time to finish 72h? ,if it is fuel oil is it take time to finish over 120h?every time one goes beyond that point need to pay demurrages.
+❖ Above conditions for laycan start time.
+❖ A finish product vessel can birth both DTB and SPBM
+❖ Form this births, not the first birth, the last one .lording arm disconnected time difference need with laycan started .need the difference between laycan started from with lording arm disconnected time.
+❖ If a 96h vessel going to discharge 106h,if that vessel birth twice, terminal can reduce 4h.it calls shifty. if the vessel birth twice they can reduce 4h.
+Terms:
+
+Vessel arrived(E.O.S.P)-vessel arrival time
+
+NOR Tenders: the time to discharge the vessel that they said (vessel side)
+
+ 
+
+   
