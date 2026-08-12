@@ -1,7 +1,7 @@
 import os
 import pytest
 import datetime
-from Intern.db import (
+from db import (
     init_db,
     create_user,
     delete_user,

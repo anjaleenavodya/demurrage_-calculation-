@@ -1,13 +1,17 @@
 import os
+import sys
 import traceback
+
+# Append current directory to path to allow direct imports of sibling modules
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from typing import List
 from fastapi import FastAPI, HTTPException, Request, Depends, Response, status
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
-from Intern.calculator import CalculationRequest, CalculationResponse, run_calculation
-from Intern import db
+from calculator import CalculationRequest, CalculationResponse, run_calculation
+import db
 
 app = FastAPI(title="Vessel Laycan & Demurrage Calculator")
 

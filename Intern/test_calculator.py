@@ -1,6 +1,6 @@
 import datetime
 import pytest
-from Intern.calculator import (
+from calculator import (
     CalculationRequest,
     DelayItem,
     calculate_laycan_start,
