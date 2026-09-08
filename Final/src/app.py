@@ -150,7 +150,6 @@ except Exception as e:
 
 # Sidebar Navigation & Context - Zero Emojis
 with st.sidebar:
-    st.image("https://images.unsplash.com/photo-1592417817098-8f3d6910985b?w=600&auto=format&fit=crop&q=60", use_container_width=True)
     st.title("Sri Lanka Agri-MIS")
     st.caption("Weather-Driven Vegetable Price & Crop Decision Support System")
     
