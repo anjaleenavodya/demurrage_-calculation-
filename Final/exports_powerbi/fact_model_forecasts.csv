@@ -1,0 +1,37 @@
+crop_name,base_date,forecast_date,month_offset,predicted_farm_price,ci_lower,ci_upper,model_type
+Beans,2024-06-01,2024-07-01,1,185.76,83.97,287.55,PyTorch BiLSTM-Attention
+Beans,2024-06-01,2024-08-01,2,188.47,86.68,290.26,PyTorch BiLSTM-Attention
+Beans,2024-06-01,2024-09-01,3,195.99,94.2,297.78,PyTorch BiLSTM-Attention
+Beans,2024-06-01,2024-10-01,4,192.54,90.75,294.33,PyTorch BiLSTM-Attention
+Brinjal,2024-06-01,2024-07-01,1,152.34,81.75,222.93,PyTorch BiLSTM-Attention
+Brinjal,2024-06-01,2024-08-01,2,153.18,82.59,223.76,PyTorch BiLSTM-Attention
+Brinjal,2024-06-01,2024-09-01,3,158.22,87.64,228.81,PyTorch BiLSTM-Attention
+Brinjal,2024-06-01,2024-10-01,4,157.59,87.0,228.18,PyTorch BiLSTM-Attention
+Cabbage,2024-06-01,2024-07-01,1,159.58,82.1,237.05,PyTorch BiLSTM-Attention
+Cabbage,2024-06-01,2024-08-01,2,161.15,83.67,238.63,PyTorch BiLSTM-Attention
+Cabbage,2024-06-01,2024-09-01,3,166.86,89.38,244.34,PyTorch BiLSTM-Attention
+Cabbage,2024-06-01,2024-10-01,4,165.34,87.87,242.82,PyTorch BiLSTM-Attention
+Carrot,2024-06-01,2024-07-01,1,188.67,50.13,327.21,PyTorch BiLSTM-Attention
+Carrot,2024-06-01,2024-08-01,2,191.8,53.26,330.34,PyTorch BiLSTM-Attention
+Carrot,2024-06-01,2024-09-01,3,200.54,62.0,339.08,PyTorch BiLSTM-Attention
+Carrot,2024-06-01,2024-10-01,4,197.6,59.06,336.15,PyTorch BiLSTM-Attention
+Green Chilli,2024-06-01,2024-07-01,1,205.6,24.17,387.02,PyTorch BiLSTM-Attention
+Green Chilli,2024-06-01,2024-08-01,2,210.79,29.36,392.21,PyTorch BiLSTM-Attention
+Green Chilli,2024-06-01,2024-09-01,3,221.56,40.13,402.99,PyTorch BiLSTM-Attention
+Green Chilli,2024-06-01,2024-10-01,4,218.34,36.91,399.77,PyTorch BiLSTM-Attention
+Lime,2024-06-01,2024-07-01,1,250.63,14.6,486.65,PyTorch BiLSTM-Attention
+Lime,2024-06-01,2024-08-01,2,258.01,21.99,494.04,PyTorch BiLSTM-Attention
+Lime,2024-06-01,2024-09-01,3,274.96,38.94,510.99,PyTorch BiLSTM-Attention
+Lime,2024-06-01,2024-10-01,4,270.51,34.49,506.54,PyTorch BiLSTM-Attention
+Pumpkin,2024-06-01,2024-07-01,1,142.94,106.42,179.46,PyTorch BiLSTM-Attention
+Pumpkin,2024-06-01,2024-08-01,2,143.16,106.64,179.68,PyTorch BiLSTM-Attention
+Pumpkin,2024-06-01,2024-09-01,3,145.67,109.15,182.19,PyTorch BiLSTM-Attention
+Pumpkin,2024-06-01,2024-10-01,4,145.22,108.7,181.74,PyTorch BiLSTM-Attention
+Snake Gourd,2024-06-01,2024-07-01,1,143.72,93.6,193.84,PyTorch BiLSTM-Attention
+Snake Gourd,2024-06-01,2024-08-01,2,144.32,94.2,194.44,PyTorch BiLSTM-Attention
+Snake Gourd,2024-06-01,2024-09-01,3,147.35,97.23,197.47,PyTorch BiLSTM-Attention
+Snake Gourd,2024-06-01,2024-10-01,4,146.48,96.35,196.6,PyTorch BiLSTM-Attention
+Tomato,2024-06-01,2024-07-01,1,179.14,61.56,296.73,PyTorch BiLSTM-Attention
+Tomato,2024-06-01,2024-08-01,2,182.54,64.96,300.13,PyTorch BiLSTM-Attention
+Tomato,2024-06-01,2024-09-01,3,192.03,74.45,309.62,PyTorch BiLSTM-Attention
+Tomato,2024-06-01,2024-10-01,4,190.8,73.22,308.38,PyTorch BiLSTM-Attention

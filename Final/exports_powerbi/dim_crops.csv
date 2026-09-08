@@ -1,0 +1,10 @@
+crop_name,duration_months,ideal_temp_min,ideal_temp_max,ideal_rain_min,ideal_rain_max,flood_sensitivity,drought_tolerance,est_cost_per_kg,yield_per_acre_kg,primary_zones,agronomic_tip
+Beans,2,18.0,28.0,80.0,200.0,High,Medium,150.0,4000,"Badulla, Nuwara Eliya, Matale, Kandy, Welimada",Sensitive to excessive waterlogging. Ensure well-drained loamy soil during monsoon months.
+Carrot,3,15.0,24.0,70.0,160.0,Very High,Medium,180.0,8000,"Nuwara Eliya, Badulla, Welimada, Bandarawela",Thrives in cooler hill-country elevations. High rainfall at root maturation causes cracking.
+Cabbage,3,16.0,26.0,90.0,220.0,Medium,Low,110.0,10000,"Nuwara Eliya, Badulla, Kandy, Matale",High yield potential. Requires uniform soil moisture; apply mulch in dry months.
+Tomato,3,20.0,30.0,60.0,180.0,High,Medium,140.0,7500,"Badulla, Matale, Kandy, Anuradhapura, Jaffna",Susceptible to fungal blight in heavy continuous rainfall. High market price volatility.
+Brinjal,4,22.0,33.0,60.0,220.0,Medium,High,120.0,7000,"Anuradhapura, Kurunegala, Matale, Hambantota, Badulla",Hardy warm-season crop. Highly resilient to temperature fluctuations.
+Pumpkin,4,22.0,34.0,50.0,190.0,Medium,High,70.0,9000,"Anuradhapura, Monaragala, Hambantota, Polonnaruwa, Matale",Low initial input cost and long storage shelf life after harvest.
+Green Chilli,4,20.0,32.0,60.0,170.0,Very High,Medium,260.0,3500,"Anuradhapura, Jaffna, Puttalam, Monaragala, Matale",High-value commercial crop. Extreme price spikes when supply is hit by unseasonal rain.
+Snake Gourd,3,22.0,32.0,70.0,210.0,Medium,Medium,95.0,6500,"Gampaha, Kalutara, Kurunegala, Kandy, Matale",Requires trellising or pandal system. Consistent regular harvesting schedule.
+Lime,4,22.0,35.0,50.0,200.0,Medium,High,200.0,3000,"Monaragala, Hambantota, Anuradhapura, Polonnaruwa",Perennial orchard crop. Significant off-season price increases in dry months.

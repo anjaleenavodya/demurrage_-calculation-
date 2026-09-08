@@ -1,0 +1,433 @@
+planting_month_num,planting_month_name,district,crop_name,rank,recommendation_score,verdict,harvest_month_name,gestation_months,predicted_farm_price_lkr,production_cost_per_kg_lkr,net_margin_per_kg_lkr,profit_margin_pct,climate_suitability_score
+1,January,Badulla,Pumpkin,1,95.0,Highly Recommended,May,4,145.22,70.0,75.22,107.5,100.0
+1,January,Badulla,Snake Gourd,2,78.9,Highly Recommended,April,3,147.35,95.0,52.35,55.1,100.0
+1,January,Badulla,Cabbage,3,70.3,Recommended,April,3,166.86,110.0,56.86,51.7,94.0
+1,January,Badulla,Tomato,4,63.0,Recommended,April,3,192.03,140.0,52.03,37.2,100.0
+1,January,Badulla,Brinjal,5,59.2,Moderate / Proceed with Caution,May,4,157.59,120.0,37.59,31.3,100.0
+1,January,Badulla,Lime,6,53.3,Moderate / Proceed with Caution,May,4,270.51,200.0,70.51,35.3,100.0
+1,January,Badulla,Beans,7,52.7,Moderate / Proceed with Caution,March,2,188.47,150.0,38.47,25.6,93.0
+1,January,Badulla,Carrot,8,37.6,High Risk / Not Advisable,April,3,200.54,180.0,20.54,11.4,78.0
+1,January,Badulla,Green Chilli,9,24.1,High Risk / Not Advisable,May,4,218.34,260.0,-41.66,-16.0,100.0
+1,January,Nuwara Eliya,Pumpkin,1,95.0,Highly Recommended,May,4,145.22,70.0,75.22,107.5,100.0
+1,January,Nuwara Eliya,Snake Gourd,2,78.9,Highly Recommended,April,3,147.35,95.0,52.35,55.1,100.0
+1,January,Nuwara Eliya,Cabbage,3,70.3,Recommended,April,3,166.86,110.0,56.86,51.7,94.0
+1,January,Nuwara Eliya,Tomato,4,54.4,Moderate / Proceed with Caution,April,3,192.03,140.0,52.03,37.2,100.0
+1,January,Nuwara Eliya,Lime,5,53.3,Moderate / Proceed with Caution,May,4,270.51,200.0,70.51,35.3,100.0
+1,January,Nuwara Eliya,Beans,6,52.7,Moderate / Proceed with Caution,March,2,188.47,150.0,38.47,25.6,93.0
+1,January,Nuwara Eliya,Brinjal,7,51.1,Moderate / Proceed with Caution,May,4,157.59,120.0,37.59,31.3,100.0
+1,January,Nuwara Eliya,Carrot,8,37.6,High Risk / Not Advisable,April,3,200.54,180.0,20.54,11.4,78.0
+1,January,Nuwara Eliya,Green Chilli,9,24.1,High Risk / Not Advisable,May,4,218.34,260.0,-41.66,-16.0,100.0
+1,January,Matale,Pumpkin,1,99.0,Highly Recommended,May,4,145.22,70.0,75.22,107.5,100.0
+1,January,Matale,Snake Gourd,2,91.4,Highly Recommended,April,3,147.35,95.0,52.35,55.1,100.0
+1,January,Matale,Cabbage,3,70.3,Recommended,April,3,166.86,110.0,56.86,51.7,94.0
+1,January,Matale,Tomato,4,63.0,Recommended,April,3,192.03,140.0,52.03,37.2,100.0
+1,January,Matale,Brinjal,5,59.2,Moderate / Proceed with Caution,May,4,157.59,120.0,37.59,31.3,100.0
+1,January,Matale,Lime,6,53.3,Moderate / Proceed with Caution,May,4,270.51,200.0,70.51,35.3,100.0
+1,January,Matale,Beans,7,52.7,Moderate / Proceed with Caution,March,2,188.47,150.0,38.47,25.6,93.0
+1,January,Matale,Carrot,8,32.4,High Risk / Not Advisable,April,3,200.54,180.0,20.54,11.4,78.0
+1,January,Matale,Green Chilli,9,27.9,High Risk / Not Advisable,May,4,218.34,260.0,-41.66,-16.0,100.0
+1,January,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,May,4,145.22,70.0,75.22,107.5,100.0
+1,January,Anuradhapura,Snake Gourd,2,78.9,Highly Recommended,April,3,147.35,95.0,52.35,55.1,100.0
+1,January,Anuradhapura,Tomato,3,63.0,Recommended,April,3,192.03,140.0,52.03,37.2,100.0
+1,January,Anuradhapura,Lime,4,61.8,Recommended,May,4,270.51,200.0,70.51,35.3,100.0
+1,January,Anuradhapura,Cabbage,5,60.7,Recommended,April,3,166.86,110.0,56.86,51.7,94.0
+1,January,Anuradhapura,Brinjal,6,59.2,Moderate / Proceed with Caution,May,4,157.59,120.0,37.59,31.3,100.0
+1,January,Anuradhapura,Beans,7,45.5,Moderate / Proceed with Caution,March,2,188.47,150.0,38.47,25.6,93.0
+1,January,Anuradhapura,Carrot,8,32.4,High Risk / Not Advisable,April,3,200.54,180.0,20.54,11.4,78.0
+1,January,Anuradhapura,Green Chilli,9,27.9,High Risk / Not Advisable,May,4,218.34,260.0,-41.66,-16.0,100.0
+2,February,Badulla,Pumpkin,1,95.0,Highly Recommended,June,4,145.22,70.0,75.22,107.5,100.0
+2,February,Badulla,Snake Gourd,2,78.9,Highly Recommended,May,3,147.35,95.0,52.35,55.1,100.0
+2,February,Badulla,Cabbage,3,70.3,Recommended,May,3,166.86,110.0,56.86,51.7,94.0
+2,February,Badulla,Tomato,4,63.0,Recommended,May,3,192.03,140.0,52.03,37.2,100.0
+2,February,Badulla,Brinjal,5,59.2,Moderate / Proceed with Caution,June,4,157.59,120.0,37.59,31.3,100.0
+2,February,Badulla,Beans,6,55.4,Moderate / Proceed with Caution,April,2,188.47,150.0,38.47,25.6,100.0
+2,February,Badulla,Lime,7,53.3,Moderate / Proceed with Caution,June,4,270.51,200.0,70.51,35.3,100.0
+2,February,Badulla,Carrot,8,36.4,High Risk / Not Advisable,May,3,200.54,180.0,20.54,11.4,75.0
+2,February,Badulla,Green Chilli,9,24.1,High Risk / Not Advisable,June,4,218.34,260.0,-41.66,-16.0,100.0
+2,February,Nuwara Eliya,Pumpkin,1,95.0,Highly Recommended,June,4,145.22,70.0,75.22,107.5,100.0
+2,February,Nuwara Eliya,Snake Gourd,2,78.9,Highly Recommended,May,3,147.35,95.0,52.35,55.1,100.0
+2,February,Nuwara Eliya,Cabbage,3,70.3,Recommended,May,3,166.86,110.0,56.86,51.7,94.0
+2,February,Nuwara Eliya,Beans,4,55.4,Moderate / Proceed with Caution,April,2,188.47,150.0,38.47,25.6,100.0
+2,February,Nuwara Eliya,Tomato,5,54.4,Moderate / Proceed with Caution,May,3,192.03,140.0,52.03,37.2,100.0
+2,February,Nuwara Eliya,Lime,6,53.3,Moderate / Proceed with Caution,June,4,270.51,200.0,70.51,35.3,100.0
+2,February,Nuwara Eliya,Brinjal,7,51.1,Moderate / Proceed with Caution,June,4,157.59,120.0,37.59,31.3,100.0
+2,February,Nuwara Eliya,Carrot,8,36.4,High Risk / Not Advisable,May,3,200.54,180.0,20.54,11.4,75.0
+2,February,Nuwara Eliya,Green Chilli,9,24.1,High Risk / Not Advisable,June,4,218.34,260.0,-41.66,-16.0,100.0
+2,February,Matale,Pumpkin,1,99.0,Highly Recommended,June,4,145.22,70.0,75.22,107.5,100.0
+2,February,Matale,Snake Gourd,2,91.4,Highly Recommended,May,3,147.35,95.0,52.35,55.1,100.0
+2,February,Matale,Cabbage,3,70.3,Recommended,May,3,166.86,110.0,56.86,51.7,94.0
+2,February,Matale,Tomato,4,63.0,Recommended,May,3,192.03,140.0,52.03,37.2,100.0
+2,February,Matale,Brinjal,5,59.2,Moderate / Proceed with Caution,June,4,157.59,120.0,37.59,31.3,100.0
+2,February,Matale,Beans,6,55.4,Moderate / Proceed with Caution,April,2,188.47,150.0,38.47,25.6,100.0
+2,February,Matale,Lime,7,53.3,Moderate / Proceed with Caution,June,4,270.51,200.0,70.51,35.3,100.0
+2,February,Matale,Carrot,8,31.4,High Risk / Not Advisable,May,3,200.54,180.0,20.54,11.4,75.0
+2,February,Matale,Green Chilli,9,27.9,High Risk / Not Advisable,June,4,218.34,260.0,-41.66,-16.0,100.0
+2,February,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,June,4,145.22,70.0,75.22,107.5,100.0
+2,February,Anuradhapura,Snake Gourd,2,78.9,Highly Recommended,May,3,147.35,95.0,52.35,55.1,100.0
+2,February,Anuradhapura,Tomato,3,63.0,Recommended,May,3,192.03,140.0,52.03,37.2,100.0
+2,February,Anuradhapura,Lime,4,61.8,Recommended,June,4,270.51,200.0,70.51,35.3,100.0
+2,February,Anuradhapura,Cabbage,5,60.7,Recommended,May,3,166.86,110.0,56.86,51.7,94.0
+2,February,Anuradhapura,Brinjal,6,59.2,Moderate / Proceed with Caution,June,4,157.59,120.0,37.59,31.3,100.0
+2,February,Anuradhapura,Beans,7,47.9,Moderate / Proceed with Caution,April,2,188.47,150.0,38.47,25.6,100.0
+2,February,Anuradhapura,Carrot,8,31.4,High Risk / Not Advisable,May,3,200.54,180.0,20.54,11.4,75.0
+2,February,Anuradhapura,Green Chilli,9,27.9,High Risk / Not Advisable,June,4,218.34,260.0,-41.66,-16.0,100.0
+3,March,Badulla,Pumpkin,1,95.0,Highly Recommended,July,4,145.22,70.0,75.22,107.5,100.0
+3,March,Badulla,Snake Gourd,2,78.9,Highly Recommended,June,3,147.35,95.0,52.35,55.1,100.0
+3,March,Badulla,Cabbage,3,70.3,Recommended,June,3,166.86,110.0,56.86,51.7,94.0
+3,March,Badulla,Tomato,4,63.0,Recommended,June,3,192.03,140.0,52.03,37.2,100.0
+3,March,Badulla,Brinjal,5,59.2,Moderate / Proceed with Caution,July,4,157.59,120.0,37.59,31.3,100.0
+3,March,Badulla,Beans,6,55.4,Moderate / Proceed with Caution,May,2,188.47,150.0,38.47,25.6,100.0
+3,March,Badulla,Lime,7,53.3,Moderate / Proceed with Caution,July,4,270.51,200.0,70.51,35.3,100.0
+3,March,Badulla,Carrot,8,37.6,High Risk / Not Advisable,June,3,200.54,180.0,20.54,11.4,78.0
+3,March,Badulla,Green Chilli,9,24.1,High Risk / Not Advisable,July,4,218.34,260.0,-41.66,-16.0,100.0
+3,March,Nuwara Eliya,Pumpkin,1,95.0,Highly Recommended,July,4,145.22,70.0,75.22,107.5,100.0
+3,March,Nuwara Eliya,Snake Gourd,2,78.9,Highly Recommended,June,3,147.35,95.0,52.35,55.1,100.0
+3,March,Nuwara Eliya,Cabbage,3,70.3,Recommended,June,3,166.86,110.0,56.86,51.7,94.0
+3,March,Nuwara Eliya,Beans,4,55.4,Moderate / Proceed with Caution,May,2,188.47,150.0,38.47,25.6,100.0
+3,March,Nuwara Eliya,Tomato,5,54.4,Moderate / Proceed with Caution,June,3,192.03,140.0,52.03,37.2,100.0
+3,March,Nuwara Eliya,Lime,6,53.3,Moderate / Proceed with Caution,July,4,270.51,200.0,70.51,35.3,100.0
+3,March,Nuwara Eliya,Brinjal,7,51.1,Moderate / Proceed with Caution,July,4,157.59,120.0,37.59,31.3,100.0
+3,March,Nuwara Eliya,Carrot,8,37.6,High Risk / Not Advisable,June,3,200.54,180.0,20.54,11.4,78.0
+3,March,Nuwara Eliya,Green Chilli,9,24.1,High Risk / Not Advisable,July,4,218.34,260.0,-41.66,-16.0,100.0
+3,March,Matale,Pumpkin,1,99.0,Highly Recommended,July,4,145.22,70.0,75.22,107.5,100.0
+3,March,Matale,Snake Gourd,2,91.4,Highly Recommended,June,3,147.35,95.0,52.35,55.1,100.0
+3,March,Matale,Cabbage,3,70.3,Recommended,June,3,166.86,110.0,56.86,51.7,94.0
+3,March,Matale,Tomato,4,63.0,Recommended,June,3,192.03,140.0,52.03,37.2,100.0
+3,March,Matale,Brinjal,5,59.2,Moderate / Proceed with Caution,July,4,157.59,120.0,37.59,31.3,100.0
+3,March,Matale,Beans,6,55.4,Moderate / Proceed with Caution,May,2,188.47,150.0,38.47,25.6,100.0
+3,March,Matale,Lime,7,53.3,Moderate / Proceed with Caution,July,4,270.51,200.0,70.51,35.3,100.0
+3,March,Matale,Carrot,8,32.4,High Risk / Not Advisable,June,3,200.54,180.0,20.54,11.4,78.0
+3,March,Matale,Green Chilli,9,27.9,High Risk / Not Advisable,July,4,218.34,260.0,-41.66,-16.0,100.0
+3,March,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,July,4,145.22,70.0,75.22,107.5,100.0
+3,March,Anuradhapura,Snake Gourd,2,78.9,Highly Recommended,June,3,147.35,95.0,52.35,55.1,100.0
+3,March,Anuradhapura,Tomato,3,63.0,Recommended,June,3,192.03,140.0,52.03,37.2,100.0
+3,March,Anuradhapura,Lime,4,61.8,Recommended,July,4,270.51,200.0,70.51,35.3,100.0
+3,March,Anuradhapura,Cabbage,5,60.7,Recommended,June,3,166.86,110.0,56.86,51.7,94.0
+3,March,Anuradhapura,Brinjal,6,59.2,Moderate / Proceed with Caution,July,4,157.59,120.0,37.59,31.3,100.0
+3,March,Anuradhapura,Beans,7,47.9,Moderate / Proceed with Caution,May,2,188.47,150.0,38.47,25.6,100.0
+3,March,Anuradhapura,Carrot,8,32.4,High Risk / Not Advisable,June,3,200.54,180.0,20.54,11.4,78.0
+3,March,Anuradhapura,Green Chilli,9,27.9,High Risk / Not Advisable,July,4,218.34,260.0,-41.66,-16.0,100.0
+4,April,Badulla,Pumpkin,1,95.0,Highly Recommended,August,4,145.22,70.0,75.22,107.5,100.0
+4,April,Badulla,Snake Gourd,2,78.9,Highly Recommended,July,3,147.35,95.0,52.35,55.1,100.0
+4,April,Badulla,Cabbage,3,71.1,Recommended,July,3,166.86,110.0,56.86,51.7,96.0
+4,April,Badulla,Tomato,4,63.0,Recommended,July,3,192.03,140.0,52.03,37.2,100.0
+4,April,Badulla,Brinjal,5,59.2,Moderate / Proceed with Caution,August,4,157.59,120.0,37.59,31.3,100.0
+4,April,Badulla,Beans,6,55.4,Moderate / Proceed with Caution,June,2,188.47,150.0,38.47,25.6,100.0
+4,April,Badulla,Lime,7,53.3,Moderate / Proceed with Caution,August,4,270.51,200.0,70.51,35.3,100.0
+4,April,Badulla,Carrot,8,38.3,High Risk / Not Advisable,July,3,200.54,180.0,20.54,11.4,80.0
+4,April,Badulla,Green Chilli,9,24.1,High Risk / Not Advisable,August,4,218.34,260.0,-41.66,-16.0,100.0
+4,April,Nuwara Eliya,Pumpkin,1,95.0,Highly Recommended,August,4,145.22,70.0,75.22,107.5,100.0
+4,April,Nuwara Eliya,Snake Gourd,2,78.9,Highly Recommended,July,3,147.35,95.0,52.35,55.1,100.0
+4,April,Nuwara Eliya,Cabbage,3,71.1,Recommended,July,3,166.86,110.0,56.86,51.7,96.0
+4,April,Nuwara Eliya,Beans,4,55.4,Moderate / Proceed with Caution,June,2,188.47,150.0,38.47,25.6,100.0
+4,April,Nuwara Eliya,Tomato,5,54.4,Moderate / Proceed with Caution,July,3,192.03,140.0,52.03,37.2,100.0
+4,April,Nuwara Eliya,Lime,6,53.3,Moderate / Proceed with Caution,August,4,270.51,200.0,70.51,35.3,100.0
+4,April,Nuwara Eliya,Brinjal,7,51.1,Moderate / Proceed with Caution,August,4,157.59,120.0,37.59,31.3,100.0
+4,April,Nuwara Eliya,Carrot,8,38.3,High Risk / Not Advisable,July,3,200.54,180.0,20.54,11.4,80.0
+4,April,Nuwara Eliya,Green Chilli,9,24.1,High Risk / Not Advisable,August,4,218.34,260.0,-41.66,-16.0,100.0
+4,April,Matale,Pumpkin,1,99.0,Highly Recommended,August,4,145.22,70.0,75.22,107.5,100.0
+4,April,Matale,Snake Gourd,2,91.4,Highly Recommended,July,3,147.35,95.0,52.35,55.1,100.0
+4,April,Matale,Cabbage,3,71.1,Recommended,July,3,166.86,110.0,56.86,51.7,96.0
+4,April,Matale,Tomato,4,63.0,Recommended,July,3,192.03,140.0,52.03,37.2,100.0
+4,April,Matale,Brinjal,5,59.2,Moderate / Proceed with Caution,August,4,157.59,120.0,37.59,31.3,100.0
+4,April,Matale,Beans,6,55.4,Moderate / Proceed with Caution,June,2,188.47,150.0,38.47,25.6,100.0
+4,April,Matale,Lime,7,53.3,Moderate / Proceed with Caution,August,4,270.51,200.0,70.51,35.3,100.0
+4,April,Matale,Carrot,8,33.1,High Risk / Not Advisable,July,3,200.54,180.0,20.54,11.4,80.0
+4,April,Matale,Green Chilli,9,27.9,High Risk / Not Advisable,August,4,218.34,260.0,-41.66,-16.0,100.0
+4,April,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,August,4,145.22,70.0,75.22,107.5,100.0
+4,April,Anuradhapura,Snake Gourd,2,78.9,Highly Recommended,July,3,147.35,95.0,52.35,55.1,100.0
+4,April,Anuradhapura,Tomato,3,63.0,Recommended,July,3,192.03,140.0,52.03,37.2,100.0
+4,April,Anuradhapura,Lime,4,61.8,Recommended,August,4,270.51,200.0,70.51,35.3,100.0
+4,April,Anuradhapura,Cabbage,5,61.4,Recommended,July,3,166.86,110.0,56.86,51.7,96.0
+4,April,Anuradhapura,Brinjal,6,59.2,Moderate / Proceed with Caution,August,4,157.59,120.0,37.59,31.3,100.0
+4,April,Anuradhapura,Beans,7,47.9,Moderate / Proceed with Caution,June,2,188.47,150.0,38.47,25.6,100.0
+4,April,Anuradhapura,Carrot,8,33.1,High Risk / Not Advisable,July,3,200.54,180.0,20.54,11.4,80.0
+4,April,Anuradhapura,Green Chilli,9,27.9,High Risk / Not Advisable,August,4,218.34,260.0,-41.66,-16.0,100.0
+5,May,Badulla,Pumpkin,1,95.0,Highly Recommended,September,4,145.22,70.0,75.22,107.5,100.0
+5,May,Badulla,Snake Gourd,2,78.9,Highly Recommended,August,3,147.35,95.0,52.35,55.1,100.0
+5,May,Badulla,Cabbage,3,71.8,Recommended,August,3,166.86,110.0,56.86,51.7,98.0
+5,May,Badulla,Tomato,4,63.0,Recommended,August,3,192.03,140.0,52.03,37.2,100.0
+5,May,Badulla,Brinjal,5,59.2,Moderate / Proceed with Caution,September,4,157.59,120.0,37.59,31.3,100.0
+5,May,Badulla,Beans,6,55.4,Moderate / Proceed with Caution,July,2,188.47,150.0,38.47,25.6,100.0
+5,May,Badulla,Lime,7,53.3,Moderate / Proceed with Caution,September,4,270.51,200.0,70.51,35.3,100.0
+5,May,Badulla,Carrot,8,39.1,High Risk / Not Advisable,August,3,200.54,180.0,20.54,11.4,82.0
+5,May,Badulla,Green Chilli,9,24.1,High Risk / Not Advisable,September,4,218.34,260.0,-41.66,-16.0,100.0
+5,May,Nuwara Eliya,Pumpkin,1,95.0,Highly Recommended,September,4,145.22,70.0,75.22,107.5,100.0
+5,May,Nuwara Eliya,Snake Gourd,2,78.9,Highly Recommended,August,3,147.35,95.0,52.35,55.1,100.0
+5,May,Nuwara Eliya,Cabbage,3,71.8,Recommended,August,3,166.86,110.0,56.86,51.7,98.0
+5,May,Nuwara Eliya,Beans,4,55.4,Moderate / Proceed with Caution,July,2,188.47,150.0,38.47,25.6,100.0
+5,May,Nuwara Eliya,Tomato,5,54.4,Moderate / Proceed with Caution,August,3,192.03,140.0,52.03,37.2,100.0
+5,May,Nuwara Eliya,Lime,6,53.3,Moderate / Proceed with Caution,September,4,270.51,200.0,70.51,35.3,100.0
+5,May,Nuwara Eliya,Brinjal,7,51.1,Moderate / Proceed with Caution,September,4,157.59,120.0,37.59,31.3,100.0
+5,May,Nuwara Eliya,Carrot,8,39.1,High Risk / Not Advisable,August,3,200.54,180.0,20.54,11.4,82.0
+5,May,Nuwara Eliya,Green Chilli,9,24.1,High Risk / Not Advisable,September,4,218.34,260.0,-41.66,-16.0,100.0
+5,May,Matale,Pumpkin,1,99.0,Highly Recommended,September,4,145.22,70.0,75.22,107.5,100.0
+5,May,Matale,Snake Gourd,2,91.4,Highly Recommended,August,3,147.35,95.0,52.35,55.1,100.0
+5,May,Matale,Cabbage,3,71.8,Recommended,August,3,166.86,110.0,56.86,51.7,98.0
+5,May,Matale,Tomato,4,63.0,Recommended,August,3,192.03,140.0,52.03,37.2,100.0
+5,May,Matale,Brinjal,5,59.2,Moderate / Proceed with Caution,September,4,157.59,120.0,37.59,31.3,100.0
+5,May,Matale,Beans,6,55.4,Moderate / Proceed with Caution,July,2,188.47,150.0,38.47,25.6,100.0
+5,May,Matale,Lime,7,53.3,Moderate / Proceed with Caution,September,4,270.51,200.0,70.51,35.3,100.0
+5,May,Matale,Carrot,8,33.8,High Risk / Not Advisable,August,3,200.54,180.0,20.54,11.4,82.0
+5,May,Matale,Green Chilli,9,27.9,High Risk / Not Advisable,September,4,218.34,260.0,-41.66,-16.0,100.0
+5,May,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,September,4,145.22,70.0,75.22,107.5,100.0
+5,May,Anuradhapura,Snake Gourd,2,78.9,Highly Recommended,August,3,147.35,95.0,52.35,55.1,100.0
+5,May,Anuradhapura,Tomato,3,63.0,Recommended,August,3,192.03,140.0,52.03,37.2,100.0
+5,May,Anuradhapura,Cabbage,4,62.0,Recommended,August,3,166.86,110.0,56.86,51.7,98.0
+5,May,Anuradhapura,Lime,5,61.8,Recommended,September,4,270.51,200.0,70.51,35.3,100.0
+5,May,Anuradhapura,Brinjal,6,59.2,Moderate / Proceed with Caution,September,4,157.59,120.0,37.59,31.3,100.0
+5,May,Anuradhapura,Beans,7,47.9,Moderate / Proceed with Caution,July,2,188.47,150.0,38.47,25.6,100.0
+5,May,Anuradhapura,Carrot,8,33.8,High Risk / Not Advisable,August,3,200.54,180.0,20.54,11.4,82.0
+5,May,Anuradhapura,Green Chilli,9,27.9,High Risk / Not Advisable,September,4,218.34,260.0,-41.66,-16.0,100.0
+6,June,Badulla,Pumpkin,1,87.7,Highly Recommended,October,4,145.22,70.0,75.22,107.5,78.0
+6,June,Badulla,Snake Gourd,2,78.9,Highly Recommended,September,3,147.35,95.0,52.35,55.1,100.0
+6,June,Badulla,Cabbage,3,72.6,Recommended,September,3,166.86,110.0,56.86,51.7,100.0
+6,June,Badulla,Tomato,4,63.0,Recommended,September,3,192.03,140.0,52.03,37.2,100.0
+6,June,Badulla,Beans,5,55.4,Moderate / Proceed with Caution,August,2,188.47,150.0,38.47,25.6,100.0
+6,June,Badulla,Brinjal,6,54.2,Moderate / Proceed with Caution,October,4,157.59,120.0,37.59,31.3,87.0
+6,June,Badulla,Lime,7,47.0,Moderate / Proceed with Caution,October,4,270.51,200.0,70.51,35.3,81.0
+6,June,Badulla,Carrot,8,39.9,High Risk / Not Advisable,September,3,200.54,180.0,20.54,11.4,84.0
+6,June,Badulla,Green Chilli,9,12.5,High Risk / Not Advisable,October,4,218.34,260.0,-41.66,-16.0,65.0
+6,June,Nuwara Eliya,Pumpkin,1,87.7,Highly Recommended,October,4,145.22,70.0,75.22,107.5,78.0
+6,June,Nuwara Eliya,Snake Gourd,2,78.9,Highly Recommended,September,3,147.35,95.0,52.35,55.1,100.0
+6,June,Nuwara Eliya,Cabbage,3,72.6,Recommended,September,3,166.86,110.0,56.86,51.7,100.0
+6,June,Nuwara Eliya,Beans,4,55.4,Moderate / Proceed with Caution,August,2,188.47,150.0,38.47,25.6,100.0
+6,June,Nuwara Eliya,Tomato,5,54.4,Moderate / Proceed with Caution,September,3,192.03,140.0,52.03,37.2,100.0
+6,June,Nuwara Eliya,Lime,6,47.0,Moderate / Proceed with Caution,October,4,270.51,200.0,70.51,35.3,81.0
+6,June,Nuwara Eliya,Brinjal,7,46.8,Moderate / Proceed with Caution,October,4,157.59,120.0,37.59,31.3,87.0
+6,June,Nuwara Eliya,Carrot,8,39.9,High Risk / Not Advisable,September,3,200.54,180.0,20.54,11.4,84.0
+6,June,Nuwara Eliya,Green Chilli,9,12.5,High Risk / Not Advisable,October,4,218.34,260.0,-41.66,-16.0,65.0
+6,June,Matale,Pumpkin,1,99.0,Highly Recommended,October,4,145.22,70.0,75.22,107.5,78.0
+6,June,Matale,Snake Gourd,2,91.4,Highly Recommended,September,3,147.35,95.0,52.35,55.1,100.0
+6,June,Matale,Cabbage,3,72.6,Recommended,September,3,166.86,110.0,56.86,51.7,100.0
+6,June,Matale,Tomato,4,63.0,Recommended,September,3,192.03,140.0,52.03,37.2,100.0
+6,June,Matale,Beans,5,55.4,Moderate / Proceed with Caution,August,2,188.47,150.0,38.47,25.6,100.0
+6,June,Matale,Brinjal,6,54.2,Moderate / Proceed with Caution,October,4,157.59,120.0,37.59,31.3,87.0
+6,June,Matale,Lime,7,47.0,Moderate / Proceed with Caution,October,4,270.51,200.0,70.51,35.3,81.0
+6,June,Matale,Carrot,8,34.4,High Risk / Not Advisable,September,3,200.54,180.0,20.54,11.4,84.0
+6,June,Matale,Green Chilli,9,14.4,High Risk / Not Advisable,October,4,218.34,260.0,-41.66,-16.0,65.0
+6,June,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,October,4,145.22,70.0,75.22,107.5,78.0
+6,June,Anuradhapura,Snake Gourd,2,78.9,Highly Recommended,September,3,147.35,95.0,52.35,55.1,100.0
+6,June,Anuradhapura,Tomato,3,63.0,Recommended,September,3,192.03,140.0,52.03,37.2,100.0
+6,June,Anuradhapura,Cabbage,4,62.7,Recommended,September,3,166.86,110.0,56.86,51.7,100.0
+6,June,Anuradhapura,Lime,5,54.5,Moderate / Proceed with Caution,October,4,270.51,200.0,70.51,35.3,81.0
+6,June,Anuradhapura,Brinjal,6,54.2,Moderate / Proceed with Caution,October,4,157.59,120.0,37.59,31.3,87.0
+6,June,Anuradhapura,Beans,7,47.9,Moderate / Proceed with Caution,August,2,188.47,150.0,38.47,25.6,100.0
+6,June,Anuradhapura,Carrot,8,34.4,High Risk / Not Advisable,September,3,200.54,180.0,20.54,11.4,84.0
+6,June,Anuradhapura,Green Chilli,9,14.4,High Risk / Not Advisable,October,4,218.34,260.0,-41.66,-16.0,65.0
+7,July,Badulla,Pumpkin,1,86.4,Highly Recommended,November,4,145.22,70.0,75.22,107.5,74.0
+7,July,Badulla,Snake Gourd,2,73.6,Recommended,October,3,147.35,95.0,52.35,55.1,84.0
+7,July,Badulla,Cabbage,3,67.6,Recommended,October,3,166.86,110.0,56.86,51.7,87.0
+7,July,Badulla,Beans,4,55.4,Moderate / Proceed with Caution,September,2,188.47,150.0,38.47,25.6,100.0
+7,July,Badulla,Brinjal,5,52.6,Moderate / Proceed with Caution,November,4,157.59,120.0,37.59,31.3,83.0
+7,July,Badulla,Tomato,6,51.5,Moderate / Proceed with Caution,October,3,192.03,140.0,52.03,37.2,70.0
+7,July,Badulla,Lime,7,45.7,Moderate / Proceed with Caution,November,4,270.51,200.0,70.51,35.3,77.0
+7,July,Badulla,Carrot,8,26.8,High Risk / Not Advisable,October,3,200.54,180.0,20.54,11.4,50.0
+7,July,Badulla,Green Chilli,9,10.5,High Risk / Not Advisable,November,4,218.34,260.0,-41.66,-16.0,59.0
+7,July,Nuwara Eliya,Pumpkin,1,86.4,Highly Recommended,November,4,145.22,70.0,75.22,107.5,74.0
+7,July,Nuwara Eliya,Snake Gourd,2,73.6,Recommended,October,3,147.35,95.0,52.35,55.1,84.0
+7,July,Nuwara Eliya,Cabbage,3,67.6,Recommended,October,3,166.86,110.0,56.86,51.7,87.0
+7,July,Nuwara Eliya,Beans,4,55.4,Moderate / Proceed with Caution,September,2,188.47,150.0,38.47,25.6,100.0
+7,July,Nuwara Eliya,Lime,5,45.7,Moderate / Proceed with Caution,November,4,270.51,200.0,70.51,35.3,77.0
+7,July,Nuwara Eliya,Brinjal,6,45.5,Moderate / Proceed with Caution,November,4,157.59,120.0,37.59,31.3,83.0
+7,July,Nuwara Eliya,Tomato,7,44.5,High Risk / Not Advisable,October,3,192.03,140.0,52.03,37.2,70.0
+7,July,Nuwara Eliya,Carrot,8,26.8,High Risk / Not Advisable,October,3,200.54,180.0,20.54,11.4,50.0
+7,July,Nuwara Eliya,Green Chilli,9,10.5,High Risk / Not Advisable,November,4,218.34,260.0,-41.66,-16.0,59.0
+7,July,Matale,Pumpkin,1,99.0,Highly Recommended,November,4,145.22,70.0,75.22,107.5,74.0
+7,July,Matale,Snake Gourd,2,85.2,Highly Recommended,October,3,147.35,95.0,52.35,55.1,84.0
+7,July,Matale,Cabbage,3,67.6,Recommended,October,3,166.86,110.0,56.86,51.7,87.0
+7,July,Matale,Beans,4,55.4,Moderate / Proceed with Caution,September,2,188.47,150.0,38.47,25.6,100.0
+7,July,Matale,Brinjal,5,52.6,Moderate / Proceed with Caution,November,4,157.59,120.0,37.59,31.3,83.0
+7,July,Matale,Tomato,6,51.5,Moderate / Proceed with Caution,October,3,192.03,140.0,52.03,37.2,70.0
+7,July,Matale,Lime,7,45.7,Moderate / Proceed with Caution,November,4,270.51,200.0,70.51,35.3,77.0
+7,July,Matale,Carrot,8,23.1,High Risk / Not Advisable,October,3,200.54,180.0,20.54,11.4,50.0
+7,July,Matale,Green Chilli,9,12.1,High Risk / Not Advisable,November,4,218.34,260.0,-41.66,-16.0,59.0
+7,July,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,November,4,145.22,70.0,75.22,107.5,74.0
+7,July,Anuradhapura,Snake Gourd,2,73.6,Recommended,October,3,147.35,95.0,52.35,55.1,84.0
+7,July,Anuradhapura,Cabbage,3,58.4,Moderate / Proceed with Caution,October,3,166.86,110.0,56.86,51.7,87.0
+7,July,Anuradhapura,Lime,4,52.9,Moderate / Proceed with Caution,November,4,270.51,200.0,70.51,35.3,77.0
+7,July,Anuradhapura,Brinjal,5,52.6,Moderate / Proceed with Caution,November,4,157.59,120.0,37.59,31.3,83.0
+7,July,Anuradhapura,Tomato,6,51.5,Moderate / Proceed with Caution,October,3,192.03,140.0,52.03,37.2,70.0
+7,July,Anuradhapura,Beans,7,47.9,Moderate / Proceed with Caution,September,2,188.47,150.0,38.47,25.6,100.0
+7,July,Anuradhapura,Carrot,8,23.1,High Risk / Not Advisable,October,3,200.54,180.0,20.54,11.4,50.0
+7,July,Anuradhapura,Green Chilli,9,12.1,High Risk / Not Advisable,November,4,218.34,260.0,-41.66,-16.0,59.0
+8,August,Badulla,Pumpkin,1,93.0,Highly Recommended,December,4,145.22,70.0,75.22,107.5,94.0
+8,August,Badulla,Snake Gourd,2,72.3,Recommended,November,3,147.35,95.0,52.35,55.1,80.0
+8,August,Badulla,Cabbage,3,66.1,Recommended,November,3,166.86,110.0,56.86,51.7,83.0
+8,August,Badulla,Brinjal,4,59.2,Moderate / Proceed with Caution,December,4,157.59,120.0,37.59,31.3,100.0
+8,August,Badulla,Lime,5,52.0,Moderate / Proceed with Caution,December,4,270.51,200.0,70.51,35.3,96.0
+8,August,Badulla,Tomato,6,49.2,Moderate / Proceed with Caution,November,3,192.03,140.0,52.03,37.2,64.0
+8,August,Badulla,Beans,7,47.0,Moderate / Proceed with Caution,October,2,188.47,150.0,38.47,25.6,78.0
+8,August,Badulla,Carrot,8,26.4,High Risk / Not Advisable,November,3,200.54,180.0,20.54,11.4,49.0
+8,August,Badulla,Green Chilli,9,19.5,High Risk / Not Advisable,December,4,218.34,260.0,-41.66,-16.0,86.0
+8,August,Nuwara Eliya,Pumpkin,1,93.0,Highly Recommended,December,4,145.22,70.0,75.22,107.5,94.0
+8,August,Nuwara Eliya,Snake Gourd,2,72.3,Recommended,November,3,147.35,95.0,52.35,55.1,80.0
+8,August,Nuwara Eliya,Cabbage,3,66.1,Recommended,November,3,166.86,110.0,56.86,51.7,83.0
+8,August,Nuwara Eliya,Lime,4,52.0,Moderate / Proceed with Caution,December,4,270.51,200.0,70.51,35.3,96.0
+8,August,Nuwara Eliya,Brinjal,5,51.1,Moderate / Proceed with Caution,December,4,157.59,120.0,37.59,31.3,100.0
+8,August,Nuwara Eliya,Beans,6,47.0,Moderate / Proceed with Caution,October,2,188.47,150.0,38.47,25.6,78.0
+8,August,Nuwara Eliya,Tomato,7,42.5,High Risk / Not Advisable,November,3,192.03,140.0,52.03,37.2,64.0
+8,August,Nuwara Eliya,Carrot,8,26.4,High Risk / Not Advisable,November,3,200.54,180.0,20.54,11.4,49.0
+8,August,Nuwara Eliya,Green Chilli,9,19.5,High Risk / Not Advisable,December,4,218.34,260.0,-41.66,-16.0,86.0
+8,August,Matale,Pumpkin,1,99.0,Highly Recommended,December,4,145.22,70.0,75.22,107.5,94.0
+8,August,Matale,Snake Gourd,2,83.7,Highly Recommended,November,3,147.35,95.0,52.35,55.1,80.0
+8,August,Matale,Cabbage,3,66.1,Recommended,November,3,166.86,110.0,56.86,51.7,83.0
+8,August,Matale,Brinjal,4,59.2,Moderate / Proceed with Caution,December,4,157.59,120.0,37.59,31.3,100.0
+8,August,Matale,Lime,5,52.0,Moderate / Proceed with Caution,December,4,270.51,200.0,70.51,35.3,96.0
+8,August,Matale,Tomato,6,49.2,Moderate / Proceed with Caution,November,3,192.03,140.0,52.03,37.2,64.0
+8,August,Matale,Beans,7,47.0,Moderate / Proceed with Caution,October,2,188.47,150.0,38.47,25.6,78.0
+8,August,Matale,Carrot,8,22.8,High Risk / Not Advisable,November,3,200.54,180.0,20.54,11.4,49.0
+8,August,Matale,Green Chilli,9,22.5,High Risk / Not Advisable,December,4,218.34,260.0,-41.66,-16.0,86.0
+8,August,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,December,4,145.22,70.0,75.22,107.5,94.0
+8,August,Anuradhapura,Snake Gourd,2,72.3,Recommended,November,3,147.35,95.0,52.35,55.1,80.0
+8,August,Anuradhapura,Lime,3,60.2,Recommended,December,4,270.51,200.0,70.51,35.3,96.0
+8,August,Anuradhapura,Brinjal,4,59.2,Moderate / Proceed with Caution,December,4,157.59,120.0,37.59,31.3,100.0
+8,August,Anuradhapura,Cabbage,5,57.1,Moderate / Proceed with Caution,November,3,166.86,110.0,56.86,51.7,83.0
+8,August,Anuradhapura,Tomato,6,49.2,Moderate / Proceed with Caution,November,3,192.03,140.0,52.03,37.2,64.0
+8,August,Anuradhapura,Beans,7,40.6,High Risk / Not Advisable,October,2,188.47,150.0,38.47,25.6,78.0
+8,August,Anuradhapura,Carrot,8,22.8,High Risk / Not Advisable,November,3,200.54,180.0,20.54,11.4,49.0
+8,August,Anuradhapura,Green Chilli,9,22.5,High Risk / Not Advisable,December,4,218.34,260.0,-41.66,-16.0,86.0
+9,September,Badulla,Pumpkin,1,95.0,Highly Recommended,January,4,145.22,70.0,75.22,107.5,100.0
+9,September,Badulla,Snake Gourd,2,78.2,Highly Recommended,December,3,147.35,95.0,52.35,55.1,98.0
+9,September,Badulla,Cabbage,3,72.6,Recommended,December,3,166.86,110.0,56.86,51.7,100.0
+9,September,Badulla,Tomato,4,59.2,Moderate / Proceed with Caution,December,3,192.03,140.0,52.03,37.2,90.0
+9,September,Badulla,Brinjal,5,59.2,Moderate / Proceed with Caution,January,4,157.59,120.0,37.59,31.3,100.0
+9,September,Badulla,Lime,6,53.3,Moderate / Proceed with Caution,January,4,270.51,200.0,70.51,35.3,100.0
+9,September,Badulla,Beans,7,44.6,High Risk / Not Advisable,November,2,188.47,150.0,38.47,25.6,72.0
+9,September,Badulla,Carrot,8,38.3,High Risk / Not Advisable,December,3,200.54,180.0,20.54,11.4,80.0
+9,September,Badulla,Green Chilli,9,24.1,High Risk / Not Advisable,January,4,218.34,260.0,-41.66,-16.0,100.0
+9,September,Nuwara Eliya,Pumpkin,1,95.0,Highly Recommended,January,4,145.22,70.0,75.22,107.5,100.0
+9,September,Nuwara Eliya,Snake Gourd,2,78.2,Highly Recommended,December,3,147.35,95.0,52.35,55.1,98.0
+9,September,Nuwara Eliya,Cabbage,3,72.6,Recommended,December,3,166.86,110.0,56.86,51.7,100.0
+9,September,Nuwara Eliya,Lime,4,53.3,Moderate / Proceed with Caution,January,4,270.51,200.0,70.51,35.3,100.0
+9,September,Nuwara Eliya,Tomato,5,51.1,Moderate / Proceed with Caution,December,3,192.03,140.0,52.03,37.2,90.0
+9,September,Nuwara Eliya,Brinjal,6,51.1,Moderate / Proceed with Caution,January,4,157.59,120.0,37.59,31.3,100.0
+9,September,Nuwara Eliya,Beans,7,44.6,High Risk / Not Advisable,November,2,188.47,150.0,38.47,25.6,72.0
+9,September,Nuwara Eliya,Carrot,8,38.3,High Risk / Not Advisable,December,3,200.54,180.0,20.54,11.4,80.0
+9,September,Nuwara Eliya,Green Chilli,9,24.1,High Risk / Not Advisable,January,4,218.34,260.0,-41.66,-16.0,100.0
+9,September,Matale,Pumpkin,1,99.0,Highly Recommended,January,4,145.22,70.0,75.22,107.5,100.0
+9,September,Matale,Snake Gourd,2,90.6,Highly Recommended,December,3,147.35,95.0,52.35,55.1,98.0
+9,September,Matale,Cabbage,3,72.6,Recommended,December,3,166.86,110.0,56.86,51.7,100.0
+9,September,Matale,Tomato,4,59.2,Moderate / Proceed with Caution,December,3,192.03,140.0,52.03,37.2,90.0
+9,September,Matale,Brinjal,5,59.2,Moderate / Proceed with Caution,January,4,157.59,120.0,37.59,31.3,100.0
+9,September,Matale,Lime,6,53.3,Moderate / Proceed with Caution,January,4,270.51,200.0,70.51,35.3,100.0
+9,September,Matale,Beans,7,44.6,High Risk / Not Advisable,November,2,188.47,150.0,38.47,25.6,72.0
+9,September,Matale,Carrot,8,33.1,High Risk / Not Advisable,December,3,200.54,180.0,20.54,11.4,80.0
+9,September,Matale,Green Chilli,9,27.9,High Risk / Not Advisable,January,4,218.34,260.0,-41.66,-16.0,100.0
+9,September,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,January,4,145.22,70.0,75.22,107.5,100.0
+9,September,Anuradhapura,Snake Gourd,2,78.2,Highly Recommended,December,3,147.35,95.0,52.35,55.1,98.0
+9,September,Anuradhapura,Cabbage,3,62.7,Recommended,December,3,166.86,110.0,56.86,51.7,100.0
+9,September,Anuradhapura,Lime,4,61.8,Recommended,January,4,270.51,200.0,70.51,35.3,100.0
+9,September,Anuradhapura,Tomato,5,59.2,Moderate / Proceed with Caution,December,3,192.03,140.0,52.03,37.2,90.0
+9,September,Anuradhapura,Brinjal,6,59.2,Moderate / Proceed with Caution,January,4,157.59,120.0,37.59,31.3,100.0
+9,September,Anuradhapura,Beans,7,38.6,High Risk / Not Advisable,November,2,188.47,150.0,38.47,25.6,72.0
+9,September,Anuradhapura,Carrot,8,33.1,High Risk / Not Advisable,December,3,200.54,180.0,20.54,11.4,80.0
+9,September,Anuradhapura,Green Chilli,9,27.9,High Risk / Not Advisable,January,4,218.34,260.0,-41.66,-16.0,100.0
+10,October,Badulla,Pumpkin,1,95.0,Highly Recommended,February,4,145.22,70.0,75.22,107.5,100.0
+10,October,Badulla,Snake Gourd,2,78.9,Highly Recommended,January,3,147.35,95.0,52.35,55.1,100.0
+10,October,Badulla,Cabbage,3,71.1,Recommended,January,3,166.86,110.0,56.86,51.7,96.0
+10,October,Badulla,Tomato,4,63.0,Recommended,January,3,192.03,140.0,52.03,37.2,100.0
+10,October,Badulla,Brinjal,5,59.2,Moderate / Proceed with Caution,February,4,157.59,120.0,37.59,31.3,100.0
+10,October,Badulla,Beans,6,53.5,Moderate / Proceed with Caution,December,2,188.47,150.0,38.47,25.6,95.0
+10,October,Badulla,Lime,7,53.3,Moderate / Proceed with Caution,February,4,270.51,200.0,70.51,35.3,100.0
+10,October,Badulla,Carrot,8,45.6,Moderate / Proceed with Caution,January,3,200.54,180.0,20.54,11.4,99.0
+10,October,Badulla,Green Chilli,9,24.1,High Risk / Not Advisable,February,4,218.34,260.0,-41.66,-16.0,100.0
+10,October,Nuwara Eliya,Pumpkin,1,95.0,Highly Recommended,February,4,145.22,70.0,75.22,107.5,100.0
+10,October,Nuwara Eliya,Snake Gourd,2,78.9,Highly Recommended,January,3,147.35,95.0,52.35,55.1,100.0
+10,October,Nuwara Eliya,Cabbage,3,71.1,Recommended,January,3,166.86,110.0,56.86,51.7,96.0
+10,October,Nuwara Eliya,Tomato,4,54.4,Moderate / Proceed with Caution,January,3,192.03,140.0,52.03,37.2,100.0
+10,October,Nuwara Eliya,Beans,5,53.5,Moderate / Proceed with Caution,December,2,188.47,150.0,38.47,25.6,95.0
+10,October,Nuwara Eliya,Lime,6,53.3,Moderate / Proceed with Caution,February,4,270.51,200.0,70.51,35.3,100.0
+10,October,Nuwara Eliya,Brinjal,7,51.1,Moderate / Proceed with Caution,February,4,157.59,120.0,37.59,31.3,100.0
+10,October,Nuwara Eliya,Carrot,8,45.6,Moderate / Proceed with Caution,January,3,200.54,180.0,20.54,11.4,99.0
+10,October,Nuwara Eliya,Green Chilli,9,24.1,High Risk / Not Advisable,February,4,218.34,260.0,-41.66,-16.0,100.0
+10,October,Matale,Pumpkin,1,99.0,Highly Recommended,February,4,145.22,70.0,75.22,107.5,100.0
+10,October,Matale,Snake Gourd,2,91.4,Highly Recommended,January,3,147.35,95.0,52.35,55.1,100.0
+10,October,Matale,Cabbage,3,71.1,Recommended,January,3,166.86,110.0,56.86,51.7,96.0
+10,October,Matale,Tomato,4,63.0,Recommended,January,3,192.03,140.0,52.03,37.2,100.0
+10,October,Matale,Brinjal,5,59.2,Moderate / Proceed with Caution,February,4,157.59,120.0,37.59,31.3,100.0
+10,October,Matale,Beans,6,53.5,Moderate / Proceed with Caution,December,2,188.47,150.0,38.47,25.6,95.0
+10,October,Matale,Lime,7,53.3,Moderate / Proceed with Caution,February,4,270.51,200.0,70.51,35.3,100.0
+10,October,Matale,Carrot,8,39.4,High Risk / Not Advisable,January,3,200.54,180.0,20.54,11.4,99.0
+10,October,Matale,Green Chilli,9,27.9,High Risk / Not Advisable,February,4,218.34,260.0,-41.66,-16.0,100.0
+10,October,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,February,4,145.22,70.0,75.22,107.5,100.0
+10,October,Anuradhapura,Snake Gourd,2,78.9,Highly Recommended,January,3,147.35,95.0,52.35,55.1,100.0
+10,October,Anuradhapura,Tomato,3,63.0,Recommended,January,3,192.03,140.0,52.03,37.2,100.0
+10,October,Anuradhapura,Lime,4,61.8,Recommended,February,4,270.51,200.0,70.51,35.3,100.0
+10,October,Anuradhapura,Cabbage,5,61.4,Recommended,January,3,166.86,110.0,56.86,51.7,96.0
+10,October,Anuradhapura,Brinjal,6,59.2,Moderate / Proceed with Caution,February,4,157.59,120.0,37.59,31.3,100.0
+10,October,Anuradhapura,Beans,7,46.2,Moderate / Proceed with Caution,December,2,188.47,150.0,38.47,25.6,95.0
+10,October,Anuradhapura,Carrot,8,39.4,High Risk / Not Advisable,January,3,200.54,180.0,20.54,11.4,99.0
+10,October,Anuradhapura,Green Chilli,9,27.9,High Risk / Not Advisable,February,4,218.34,260.0,-41.66,-16.0,100.0
+11,November,Badulla,Pumpkin,1,95.0,Highly Recommended,March,4,145.22,70.0,75.22,107.5,100.0
+11,November,Badulla,Snake Gourd,2,78.9,Highly Recommended,February,3,147.35,95.0,52.35,55.1,100.0
+11,November,Badulla,Cabbage,3,70.3,Recommended,February,3,166.86,110.0,56.86,51.7,94.0
+11,November,Badulla,Tomato,4,63.0,Recommended,February,3,192.03,140.0,52.03,37.2,100.0
+11,November,Badulla,Brinjal,5,59.2,Moderate / Proceed with Caution,March,4,157.59,120.0,37.59,31.3,100.0
+11,November,Badulla,Beans,6,55.4,Moderate / Proceed with Caution,January,2,188.47,150.0,38.47,25.6,100.0
+11,November,Badulla,Lime,7,53.3,Moderate / Proceed with Caution,March,4,270.51,200.0,70.51,35.3,100.0
+11,November,Badulla,Carrot,8,43.7,High Risk / Not Advisable,February,3,200.54,180.0,20.54,11.4,94.0
+11,November,Badulla,Green Chilli,9,24.1,High Risk / Not Advisable,March,4,218.34,260.0,-41.66,-16.0,100.0
+11,November,Nuwara Eliya,Pumpkin,1,95.0,Highly Recommended,March,4,145.22,70.0,75.22,107.5,100.0
+11,November,Nuwara Eliya,Snake Gourd,2,78.9,Highly Recommended,February,3,147.35,95.0,52.35,55.1,100.0
+11,November,Nuwara Eliya,Cabbage,3,70.3,Recommended,February,3,166.86,110.0,56.86,51.7,94.0
+11,November,Nuwara Eliya,Beans,4,55.4,Moderate / Proceed with Caution,January,2,188.47,150.0,38.47,25.6,100.0
+11,November,Nuwara Eliya,Tomato,5,54.4,Moderate / Proceed with Caution,February,3,192.03,140.0,52.03,37.2,100.0
+11,November,Nuwara Eliya,Lime,6,53.3,Moderate / Proceed with Caution,March,4,270.51,200.0,70.51,35.3,100.0
+11,November,Nuwara Eliya,Brinjal,7,51.1,Moderate / Proceed with Caution,March,4,157.59,120.0,37.59,31.3,100.0
+11,November,Nuwara Eliya,Carrot,8,43.7,High Risk / Not Advisable,February,3,200.54,180.0,20.54,11.4,94.0
+11,November,Nuwara Eliya,Green Chilli,9,24.1,High Risk / Not Advisable,March,4,218.34,260.0,-41.66,-16.0,100.0
+11,November,Matale,Pumpkin,1,99.0,Highly Recommended,March,4,145.22,70.0,75.22,107.5,100.0
+11,November,Matale,Snake Gourd,2,91.4,Highly Recommended,February,3,147.35,95.0,52.35,55.1,100.0
+11,November,Matale,Cabbage,3,70.3,Recommended,February,3,166.86,110.0,56.86,51.7,94.0
+11,November,Matale,Tomato,4,63.0,Recommended,February,3,192.03,140.0,52.03,37.2,100.0
+11,November,Matale,Brinjal,5,59.2,Moderate / Proceed with Caution,March,4,157.59,120.0,37.59,31.3,100.0
+11,November,Matale,Beans,6,55.4,Moderate / Proceed with Caution,January,2,188.47,150.0,38.47,25.6,100.0
+11,November,Matale,Lime,7,53.3,Moderate / Proceed with Caution,March,4,270.51,200.0,70.51,35.3,100.0
+11,November,Matale,Carrot,8,37.8,High Risk / Not Advisable,February,3,200.54,180.0,20.54,11.4,94.0
+11,November,Matale,Green Chilli,9,27.9,High Risk / Not Advisable,March,4,218.34,260.0,-41.66,-16.0,100.0
+11,November,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,March,4,145.22,70.0,75.22,107.5,100.0
+11,November,Anuradhapura,Snake Gourd,2,78.9,Highly Recommended,February,3,147.35,95.0,52.35,55.1,100.0
+11,November,Anuradhapura,Tomato,3,63.0,Recommended,February,3,192.03,140.0,52.03,37.2,100.0
+11,November,Anuradhapura,Lime,4,61.8,Recommended,March,4,270.51,200.0,70.51,35.3,100.0
+11,November,Anuradhapura,Cabbage,5,60.7,Recommended,February,3,166.86,110.0,56.86,51.7,94.0
+11,November,Anuradhapura,Brinjal,6,59.2,Moderate / Proceed with Caution,March,4,157.59,120.0,37.59,31.3,100.0
+11,November,Anuradhapura,Beans,7,47.9,Moderate / Proceed with Caution,January,2,188.47,150.0,38.47,25.6,100.0
+11,November,Anuradhapura,Carrot,8,37.8,High Risk / Not Advisable,February,3,200.54,180.0,20.54,11.4,94.0
+11,November,Anuradhapura,Green Chilli,9,27.9,High Risk / Not Advisable,March,4,218.34,260.0,-41.66,-16.0,100.0
+12,December,Badulla,Pumpkin,1,95.0,Highly Recommended,April,4,145.22,70.0,75.22,107.5,100.0
+12,December,Badulla,Snake Gourd,2,77.9,Highly Recommended,March,3,147.35,95.0,52.35,55.1,97.0
+12,December,Badulla,Cabbage,3,69.2,Recommended,March,3,166.86,110.0,56.86,51.7,91.0
+12,December,Badulla,Tomato,4,63.0,Recommended,March,3,192.03,140.0,52.03,37.2,100.0
+12,December,Badulla,Brinjal,5,59.2,Moderate / Proceed with Caution,April,4,157.59,120.0,37.59,31.3,100.0
+12,December,Badulla,Beans,6,54.3,Moderate / Proceed with Caution,February,2,188.47,150.0,38.47,25.6,97.0
+12,December,Badulla,Lime,7,53.3,Moderate / Proceed with Caution,April,4,270.51,200.0,70.51,35.3,100.0
+12,December,Badulla,Carrot,8,39.5,High Risk / Not Advisable,March,3,200.54,180.0,20.54,11.4,83.0
+12,December,Badulla,Green Chilli,9,24.1,High Risk / Not Advisable,April,4,218.34,260.0,-41.66,-16.0,100.0
+12,December,Nuwara Eliya,Pumpkin,1,95.0,Highly Recommended,April,4,145.22,70.0,75.22,107.5,100.0
+12,December,Nuwara Eliya,Snake Gourd,2,77.9,Highly Recommended,March,3,147.35,95.0,52.35,55.1,97.0
+12,December,Nuwara Eliya,Cabbage,3,69.2,Recommended,March,3,166.86,110.0,56.86,51.7,91.0
+12,December,Nuwara Eliya,Tomato,4,54.4,Moderate / Proceed with Caution,March,3,192.03,140.0,52.03,37.2,100.0
+12,December,Nuwara Eliya,Beans,5,54.3,Moderate / Proceed with Caution,February,2,188.47,150.0,38.47,25.6,97.0
+12,December,Nuwara Eliya,Lime,6,53.3,Moderate / Proceed with Caution,April,4,270.51,200.0,70.51,35.3,100.0
+12,December,Nuwara Eliya,Brinjal,7,51.1,Moderate / Proceed with Caution,April,4,157.59,120.0,37.59,31.3,100.0
+12,December,Nuwara Eliya,Carrot,8,39.5,High Risk / Not Advisable,March,3,200.54,180.0,20.54,11.4,83.0
+12,December,Nuwara Eliya,Green Chilli,9,24.1,High Risk / Not Advisable,April,4,218.34,260.0,-41.66,-16.0,100.0
+12,December,Matale,Pumpkin,1,99.0,Highly Recommended,April,4,145.22,70.0,75.22,107.5,100.0
+12,December,Matale,Snake Gourd,2,90.2,Highly Recommended,March,3,147.35,95.0,52.35,55.1,97.0
+12,December,Matale,Cabbage,3,69.2,Recommended,March,3,166.86,110.0,56.86,51.7,91.0
+12,December,Matale,Tomato,4,63.0,Recommended,March,3,192.03,140.0,52.03,37.2,100.0
+12,December,Matale,Brinjal,5,59.2,Moderate / Proceed with Caution,April,4,157.59,120.0,37.59,31.3,100.0
+12,December,Matale,Beans,6,54.3,Moderate / Proceed with Caution,February,2,188.47,150.0,38.47,25.6,97.0
+12,December,Matale,Lime,7,53.3,Moderate / Proceed with Caution,April,4,270.51,200.0,70.51,35.3,100.0
+12,December,Matale,Carrot,8,34.1,High Risk / Not Advisable,March,3,200.54,180.0,20.54,11.4,83.0
+12,December,Matale,Green Chilli,9,27.9,High Risk / Not Advisable,April,4,218.34,260.0,-41.66,-16.0,100.0
+12,December,Anuradhapura,Pumpkin,1,99.0,Highly Recommended,April,4,145.22,70.0,75.22,107.5,100.0
+12,December,Anuradhapura,Snake Gourd,2,77.9,Highly Recommended,March,3,147.35,95.0,52.35,55.1,97.0
+12,December,Anuradhapura,Tomato,3,63.0,Recommended,March,3,192.03,140.0,52.03,37.2,100.0
+12,December,Anuradhapura,Lime,4,61.8,Recommended,April,4,270.51,200.0,70.51,35.3,100.0
+12,December,Anuradhapura,Cabbage,5,59.7,Moderate / Proceed with Caution,March,3,166.86,110.0,56.86,51.7,91.0
+12,December,Anuradhapura,Brinjal,6,59.2,Moderate / Proceed with Caution,April,4,157.59,120.0,37.59,31.3,100.0
+12,December,Anuradhapura,Beans,7,46.9,Moderate / Proceed with Caution,February,2,188.47,150.0,38.47,25.6,97.0
+12,December,Anuradhapura,Carrot,8,34.1,High Risk / Not Advisable,March,3,200.54,180.0,20.54,11.4,83.0
+12,December,Anuradhapura,Green Chilli,9,27.9,High Risk / Not Advisable,April,4,218.34,260.0,-41.66,-16.0,100.0

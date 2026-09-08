@@ -1,0 +1,73 @@
+{
+  "overall": {
+    "MAE_LKR": 55.15,
+    "RMSE_LKR": 77.65,
+    "MAPE_pct": 21.3,
+    "R2_Score": 0.121
+  },
+  "by_crop": {
+    "Beans": {
+      "MAE_LKR": 45.32,
+      "RMSE_LKR": 61.88,
+      "MAPE_pct": 18.51,
+      "R2_Score": -0.605,
+      "Mean_Actual_Price": 212.65
+    },
+    "Brinjal": {
+      "MAE_LKR": 33.1,
+      "RMSE_LKR": 42.91,
+      "MAPE_pct": 16.69,
+      "R2_Score": -0.349,
+      "Mean_Actual_Price": 178.9
+    },
+    "Cabbage": {
+      "MAE_LKR": 35.31,
+      "RMSE_LKR": 47.1,
+      "MAPE_pct": 16.65,
+      "R2_Score": -0.43,
+      "Mean_Actual_Price": 188.77
+    },
+    "Carrot": {
+      "MAE_LKR": 68.01,
+      "RMSE_LKR": 84.22,
+      "MAPE_pct": 24.36,
+      "R2_Score": -2.256,
+      "Mean_Actual_Price": 251.96
+    },
+    "Green Chilli": {
+      "MAE_LKR": 89.98,
+      "RMSE_LKR": 110.29,
+      "MAPE_pct": 27.95,
+      "R2_Score": -1.828,
+      "Mean_Actual_Price": 291.95
+    },
+    "Lime": {
+      "MAE_LKR": 123.2,
+      "RMSE_LKR": 143.48,
+      "MAPE_pct": 31.87,
+      "R2_Score": -2.717,
+      "Mean_Actual_Price": 355.54
+    },
+    "Pumpkin": {
+      "MAE_LKR": 19.14,
+      "RMSE_LKR": 22.2,
+      "MAPE_pct": 14.88,
+      "R2_Score": -0.076,
+      "Mean_Actual_Price": 139.61
+    },
+    "Snake Gourd": {
+      "MAE_LKR": 25.49,
+      "RMSE_LKR": 30.47,
+      "MAPE_pct": 18.86,
+      "R2_Score": 0.003,
+      "Mean_Actual_Price": 136.33
+    },
+    "Tomato": {
+      "MAE_LKR": 56.82,
+      "RMSE_LKR": 71.48,
+      "MAPE_pct": 21.93,
+      "R2_Score": -1.331,
+      "Mean_Actual_Price": 228.5
+    }
+  }
+}
